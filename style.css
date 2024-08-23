@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+@keyframes Animation1 {
+    from{
+        color:#CC2936;
+    }
+    to{
+        color:#462255;
+    }
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3DE2C;
+}
+h1{
+    height:5vh;
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    text-align: center;
+    animation: Animation1 .75s ease-in 0s infinite alternate;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.currencyfrom{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+
+}
+.symbols{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+.currencyto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 30%
+}
+.currency{
+    text-align: center;
+    height: 5vh;
+    width: 50%;
+    border-radius: .75rem;
+    border: 1px solid gray;
+}
+.ammount{
+    margin-top: 5vh;
+    height: 5vh;
+    width: 50%;
+    border-radius: .75rem;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.flag{
+    height: 10vh;
+    width: 10vh;
+    margin-bottom: 5vh;
+}
+p{
+    height: 5vh;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+i{
+    margin-top: 5vh;
+    height: 5vh;
+    width: 10vw;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.convert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+button{
+    height: 5vh;
+    width: 12vw;
+    min-width: 60px;
+    margin: 0 2vw 0 2vw;
+    border-radius: 0.7rem;
+    animation: Animation1 .75s ease-in 0s infinite alternate;
+    cursor: pointer;
+}
+button:active{
+    height: 4vh;
+    width: 11vw;
+}
+form{
+    width:90%;
+    border-radius: 0.8rem;
+    background-color: wheat;
+}

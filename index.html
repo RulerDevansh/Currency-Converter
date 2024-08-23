@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Currency converter <small  style="font-size:1rem;">by @RulerDevansh</small></h1>
+    <form>
+        <div class="content">
+            <div class="currencyfrom">
+                <img  class="flag" id="currencyfromflag" src="https://flagsapi.com/IN/flat/64.png" alt="Flag img">
+                <select class="currency" id="from">
+                    <!-- <option value="INR">INR</option>
+                    <option value="USD">USD</option> -->
+                </select>
+                <input class="ammount" placeholder="- - -">
+                
+            </div>
+            <div class="symbols">
+                <p>TO</p>
+                <i class="fa-solid fa-right-left"></i>
+            </div>
+            <div class="currencyto">
+                <img class="flag" id="currencytoflag" src="https://flagsapi.com/US/flat/64.png" alt="Flag img">
+                <select class="currency" id="to">
+                    <!-- <option value="INR">INR</option>
+                    <option value="USD">USD</option> -->
+                </select>
+                <input class="ammount" placeholder="- - -">
+            </div>
+        </div>
+        <!-- Any button in form act as submit Button !! -->
+        <div class="convert">
+            <button id="convert">Convert</button>
+            <button id="reset">Reset</button>
+        </div>
+    </form>
+
+    <!-- CONNECTING JS FILES -->
+
+    <!-- <script src="app.js"></script>
+    <script src="Countrylist.js"></script> -->
+    <!-- THIS IS WRONG :- because here order is important to access object 
+     and functions of "Countrylist.js" WE NEED TO INCLUDE IT BEFORE "app.js"-->
+    <script src="Countrylist.js"></script>
+    <script src="app.js"></script>
+
+    </body>
+</html>
